@@ -13,6 +13,7 @@ class Cliente{
     public: 
         Cliente(int _idCliente);
         ~Cliente();
+        //void addOrdine(Ordine* o);
         friend ostream& operator << (ostream& os, const Cliente& c);
 };
 
