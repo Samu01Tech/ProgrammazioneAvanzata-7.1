@@ -13,7 +13,10 @@ int main() {
     Cliente c(999);
     c.addOrdine(&o1);
     c.addOrdine(&o2);
+    c.addOrdine(666);
+    c.addOrdine(667);
     cout << c << endl;
 
+    // ostream da modificare per stampare anche lo 
   return 0;
 } 

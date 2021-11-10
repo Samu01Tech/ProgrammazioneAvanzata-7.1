@@ -11,10 +11,13 @@ class Cliente{
     private:
         int idCliente;
         list<Ordine*> lpo;
+        list<Ordine> lo;
     public: 
         Cliente(int _idCliente);
         ~Cliente();
         void addOrdine(Ordine* po);
+        //void addOrdine(Ordine o); SBAGLIATO
+        void addOrdine(int idordine);
         friend ostream& operator << (ostream& os, const Cliente& c);
 };
 
