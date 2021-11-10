@@ -11,6 +11,9 @@ int main() {
     Ordine o3(5678);
 
     Cliente c(999);
+    c.addOrdine(&o1);
+    c.addOrdine(&o2);
     cout << c << endl;
+
   return 0;
 } 

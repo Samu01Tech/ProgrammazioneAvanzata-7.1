@@ -6,6 +6,7 @@
 #include "../ordine/ordine.h"
 using namespace std;
 
+class Ordine;
 class Cliente{
     private:
         int idCliente;
@@ -13,7 +14,7 @@ class Cliente{
     public: 
         Cliente(int _idCliente);
         ~Cliente();
-        //void addOrdine(Ordine* o);
+        void addOrdine(Ordine* po);
         friend ostream& operator << (ostream& os, const Cliente& c);
 };
 
